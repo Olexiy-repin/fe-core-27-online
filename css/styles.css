@@ -10,6 +10,13 @@
   --accent-color: #ff6c00;
 }
 
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-family: var(--main-font);
   font-style: normal;
@@ -27,6 +34,21 @@ body {
   font-style: normal;
 }
 
+img {
+  display: block;
+}
+
+.container {
+  width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.section {
+  padding-top: 130px;
+  padding-bottom: 130px;
+}
+
 /*  ============ COMPONENTS  ============ */
 .modal-btn {
   font-family: var(--main-font);
@@ -37,6 +59,19 @@ body {
   letter-spacing: 0.09em;
   text-transform: uppercase;
   color: #ffffff;
+  padding: 12px;
+  min-width: 160px;
+  height: 40px;
+  border: 1px solid #ff6c00;
+  border-radius: 25px;
+}
+
+.social-links {
+  display: flex;
+}
+
+.social-links-item:not(:last-child) {
+  margin-right: 40px;
 }
 
 .social-link {
@@ -58,6 +93,7 @@ body {
   line-height: 1.364;
   letter-spacing: 0.1em;
   text-transform: uppercase;
+  margin-bottom: 20px;
 }
 
 .subtitle-dark-theme {
@@ -101,6 +137,36 @@ body {
 /*  ============ END COMPONENTS  ============ */
 
 /*  ============ HEADER  ============ */
+.header {
+  padding: 32px 0;
+}
+
+.header .container {
+  display: flex;
+  align-items: center;
+}
+
+.header .address {
+  margin-left: auto;
+  margin-right: 40px;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
+.navigation-list {
+  display: flex;
+}
+
+.logo {
+  margin-right: 70px;
+}
+
+.navigation-list-item:not(:last-child) {
+  margin-right: 40px;
+}
 
 .navigation-list-link,
 .header-tel-link {
@@ -120,17 +186,61 @@ body {
 /*  ============ END HEADER  ============ */
 
 /*  ============ HERO  ============ */
+.hero .container {
+  display: flex;
+}
+
+.hero .description {
+  max-width: 400px;
+}
+
+.hero-left-side {
+  width: 100px;
+}
+
+.hero-right-side {
+  flex-grow: 1;
+  padding-left: 100px;
+  padding-top: 272px;
+  padding-bottom: 206px;
+}
+
 .hero-title {
   font-family: var(--secondary-font);
   font-weight: 700;
   font-size: 72px;
   line-height: 1.181;
   letter-spacing: 0.05em;
+  margin-bottom: 20px;
 }
 
 /*  ============ END HERO  ============ */
 
 /* ============ ABOUT  ============*/
+.about .container {
+  display: flex;
+}
+
+.about .title {
+  margin-bottom: 20px;
+}
+
+.about .description {
+  margin-bottom: 20px;
+}
+
+.about-list {
+  display: flex;
+}
+
+.about-list-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.about-right-side {
+  padding-left: 64px;
+  padding-right: 116px;
+}
 
 .about-text {
   font-weight: 400;
@@ -138,11 +248,41 @@ body {
   line-height: 1.857;
   letter-spacing: 0.02em;
   color: var(--description-light-theme-color);
+  margin-bottom: 40px;
 }
 
 /* ============ END ABOUT  ============*/
 
 /* ============ SERVICES  ============*/
+.services .title {
+  margin-bottom: 44px;
+}
+
+.services .modal-btn {
+  display: block;
+  margin: 0 auto;
+}
+
+.services-list-wrapper {
+  display: flex;
+  margin-bottom: 50px;
+}
+
+.services-list {
+  width: 50%;
+  padding: 30px 40px;
+  border: 1px solid #000;
+}
+
+.services-list-item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.services-list-item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
 .services-list-name,
 .services-list-price {
   font-weight: 400;
@@ -154,6 +294,48 @@ body {
 /* ============ END SERVICES  ============*/
 
 /* ============ ACHIEVMENTS  ============*/
+.achievements .container {
+  display: flex;
+}
+
+.achievements .title {
+  margin-bottom: 20px;
+}
+
+.achievements-left-side {
+  padding-left: 100px;
+}
+
+.achievements-right-side {
+  padding-left: 130px;
+}
+
+.achievements-list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 370px;
+}
+
+.achievements-list-item {
+  width: 170px;
+  height: 133px;
+  background: #f7f7f7;
+  padding: 20px 21px;
+  /* border: 1px solid #000; */
+}
+
+.achievements-list-item:not(:nth-child(even)) {
+  margin-right: 30px;
+}
+
+.achievements-list-item:nth-child(even) {
+  margin-top: 30px;
+}
+
+/* .achievements-list-item + .achievements-list-item {
+  margin-top: 30px;
+} */
+
 .achievements-list-count {
   font-weight: 700;
   font-size: 42px;
@@ -173,6 +355,21 @@ body {
 /* ============ END ACHIEVMENTS  ============*/
 
 /* ============  MASTERS  ============*/
+.masters .title {
+  margin-bottom: 44px;
+}
+
+.masters-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.masters-list-content {
+  padding-top: 30px;
+  padding-left: 82px;
+  padding-right: 82px;
+}
+
 .masters-list-name {
   font-weight: 400;
   font-size: 18px;
@@ -180,6 +377,7 @@ body {
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--title-light-theme-color);
+  margin-bottom: 8px;
 }
 
 .masters-list-position {
@@ -193,6 +391,14 @@ body {
 /* ============ END MASTERS  ============*/
 
 /* ============  GALLERY  ============*/
+.gallery .subtitle {
+  margin-bottom: 44px;
+}
+
+.gallery-list {
+  display: flex;
+  justify-content: space-between;
+}
 /* ============  END GALLERY  ============*/
 
 /* ============  CONTACT  ============*/
@@ -207,6 +413,17 @@ body {
 /* ============  END CONTACT  ============*/
 
 /* ============  FOOTER  ============*/
+.footer {
+  padding-top: 56px;
+  padding-bottom: 56px;
+}
+
+.footer .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .copyright {
   font-weight: 600;
   font-size: 11px;
