@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 600px;
+  margin: 0 auto;
+  outline: 1px solid #000;
+  padding: 10px;
+}
+
+.title {
+  /* display: flex;
+  align-items: center; */
+  font-family: sans-serif;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.title::before {
+  display: block;
+  content: "";
+  width: 400px;
+  height: 200px;
+  background-color: #ccc;
+  margin-right: 20px;
+  background-image: url("https://picsum.photos/id/237/100/100");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.title::after {
+}
+
+.description {
+}
