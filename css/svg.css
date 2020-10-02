@@ -63,10 +63,16 @@ body {
   background-image: url("../images/telegram.svg");
 } */
 
-.social-list__item-link svg {
-  fill: red;
+.social-list__item-link:hover {
+  background-color: black;
 }
 
 .social-list__item-link:hover svg {
-  fill: teal;
+  fill: white;
+}
+
+.social-list__item-link svg {
+  width: 32px;
+  height: 32px;
+  fill: black;
 }
