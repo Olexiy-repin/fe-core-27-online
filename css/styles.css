@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.list {
+  list-style: none;
+}
+
+.team-list {
+  display: flex;
+  justify-content: space-between;
+  width: 1140px;
+  margin: 0 auto;
+}
+
+.team-list-item {
+  text-align: center;
+}
+
+.team-list-item:hover .overlay {
+  transform: rotate(360deg) scale(1);
+}
+
+.team-list-img-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.team-list-item-name {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  color: rgb(85, 85, 85);
+  text-transform: uppercase;
+  line-height: 1.714;
+  margin-bottom: 8px;
+}
+
+.team-list-item-position {
+  font-family: "Roboto Slab", serif;
+  font-size: 13px;
+  color: rgb(85, 85, 85);
+  line-height: 1.846;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 32px;
+  background-color: rgba(85, 85, 85, 0.5);
+
+  transform: rotate(0) scale(0);
+  transition: all 500ms linear;
+}
+
+.social-list {
+  display: flex;
+}
+
+.social-list-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+}
+
+.social-list-link:hover {
+  background-color: rgb(192, 48, 28);
+}
+
+.social-list-svg {
+  fill: #fff;
+}
