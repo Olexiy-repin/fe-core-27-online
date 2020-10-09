@@ -9,6 +9,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 
@@ -17,7 +18,7 @@
     <header class="header">
         <div class="container">
             <nav class="navigation">
-                <a class="logo" href="./index.html" aria-label="логотип барбершопа">
+                <a class="logo animate__pulse" href="./index.html" aria-label="логотип барбершопа">
                     <svg width="68" height="54">
                         <use href="./images/sprite.svg#logo"></use>
                     </svg>
@@ -40,7 +41,7 @@
             <address class="address">
                 <a class="header-tel-link link" href="tel:+380441111111">+38 044 111 11 11</a>
             </address>
-            <button class="modal-btn" type="button">онлайн-запись</button>
+            <button class="modal-btn" type="button" data-modal-open>онлайн-запись</button>
         </div>
     </header>
     <main>
@@ -92,7 +93,7 @@
                         и жаждет перемен. И когда ты попадешь в руки нашего мастера,
                         то уже никогда не сможешь быть прежним. Мы команда, которая всегда с клиентами "на одной волне".
                         Поэтому, мы всегда готовы усовершенствовать каждого, кто к нам приходит!</p>
-                    <button class="modal-btn" type="button">онлайн-запись</button>
+                    <button class="modal-btn modal-btn-light-theme" type="button">онлайн-запись</button>
                 </div>
             </div>
         </section>
@@ -377,6 +378,14 @@
             </ul>
         </div>
     </footer>
+
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button type="button" class="close-btn" data-modal-close>X</button>
+        </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
 </body>
 
 </html>

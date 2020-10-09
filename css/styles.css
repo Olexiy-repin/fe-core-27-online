@@ -64,6 +64,24 @@ img {
   height: 40px;
   border: 1px solid #ff6c00;
   border-radius: 25px;
+  background-color: transparent;
+  cursor: pointer;
+  transition: all 250ms linear;
+}
+
+.modal-btn-light-theme {
+  color: #303030;
+}
+
+.modal-btn:hover,
+.modal-btn:focus {
+  background-color: var(--accent-color);
+  color: #fff;
+}
+
+.hero-left-side .social-links {
+  transform: rotate(-90deg);
+  transform-origin: left top;
 }
 
 .social-links {
@@ -91,6 +109,7 @@ img {
   line-height: 1.364;
   letter-spacing: 0.2em;
   color: #303030;
+  transition: color 250ms linear;
 }
 
 .social-link:hover,
@@ -164,10 +183,59 @@ img {
 .title-light-theme {
   color: var(--title-light-theme-color);
 }
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: all 500ms linear;
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: all 500ms linear 500ms;
+}
+
+.backdrop.is-hidden .modal {
+  transform: translate(-50%, -50%) scale(0);
+  transition: all 500ms linear 0ms;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  width: 528px;
+  height: 581px;
+  background-color: #fff;
+  transition: all 500ms linear 500ms;
+}
+
+.close-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  cursor: pointer;
+}
 /*  ============ END COMPONENTS  ============ */
 
 /*  ============ HEADER  ============ */
 .header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
   padding: 32px 0;
 }
 
@@ -192,6 +260,8 @@ img {
 
 .logo {
   margin-right: 70px;
+  animation-duration: 1000ms;
+  animation-iteration-count: 4;
 }
 
 .navigation-list-item:not(:last-child) {
@@ -204,6 +274,8 @@ img {
   font-size: 12px;
   line-height: 1.333;
   letter-spacing: 0.1em;
+  color: #fff;
+  transition: color 250ms linear;
 }
 
 .navigation-list-link:hover,
@@ -225,7 +297,11 @@ img {
 }
 
 .hero-left-side {
+  display: flex;
+  align-items: flex-end;
   width: 100px;
+  padding-left: 26px;
+  padding-bottom: 40px;
 }
 
 .hero-right-side {
@@ -464,6 +540,7 @@ img {
   height: 44px;
   border-radius: 50%;
   background-color: #fff;
+  transition: background-color 250ms linear;
 }
 
 .social-list-link:hover {
@@ -477,6 +554,7 @@ img {
 .social-list-svg {
   width: 20px;
   height: 20px;
+  transition: fill 250ms linear;
 }
 /* ============ END MASTERS  ============*/
 
