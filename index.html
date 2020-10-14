@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+</head>
+
+<body>
+    <form action="#" method="GET" class="contact-form">
+        <input type="text" class="contact-form__input" name="user-name" placeholder="Your name*" required
+            minlength="2" />
+        <input type="email" class="contact-form__input" name="user-email" placeholder="Your email*" required />
+        <input type="tel" class="contact-form__input" name="user-phone" placeholder="096-111-11-11*" required
+            pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" />
+
+        <div class="contact-form__group">
+            <h2 class="contact-form__group-title">Your age</h2>
+
+            <label>
+                <input type="radio" name="user-age" value="18" class="contact-form__radio" checked />
+                18
+            </label>
+
+            <input type="radio" name="user-age" value="24" class="contact-form__radio" id="user-age-24" />
+            <label for="user-age-24">24</label>
+
+            <input type="radio" name="user-age" value="30" class="contact-form__radio" id="user-age-30" />
+            <label for="user-age-30">30</label>
+        </div>
+        <div class="contact-form__group">
+            <h2 class="contact-form__group-title">Your hobby</h2>
+            <input type="checkbox" value="football" name="user-hobby" class="contact-form__radio" />
+            football
+            <input type="checkbox" value="boxing" name="user-hobby" class="contact-form__radio" checked />
+            boxing
+            <input type="checkbox" value="swimming" name="user-hobby" class="contact-form__radio" />
+            swimming
+        </div>
+        <div class="contact-form__group">
+            <h2 class="contact-form__group-title">Your message</h2>
+            <textarea name="user-message" class="contact-form__message" minlength="10" maxlength="80"
+                placeholder="Your message"></textarea>
+        </div>
+        <div class="contact-form__group">
+            <h2 class="contact-form__group-title">Your city</h2>
+            <select name="user-city">
+                <option value="Vinnitsa">Vinnitsa</option>
+                <option value="Kharkov">Kharkov</option>
+                <option value="Odessa">Odessa</option>
+            </select>
+        </div>
+
+        <div class="btn-wrapper">
+            <button type="submit" class="contact-form__submit">submit</button>
+            <button type="reset" class="contact-form__clear">clear</button>
+        </div>
+    </form>
+
+</body>
+
+</html>
