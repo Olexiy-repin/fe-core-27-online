@@ -1,0 +1,15 @@
+.title {
+    font-family: $secondary-font;
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 1.167;
+    letter-spacing: 0.05em;
+  }
+  
+  .title-dark-theme {
+    color: $title-dark-theme-color;
+  }
+  
+  .title-light-theme {
+    color: $title-light-theme-color;
+  }

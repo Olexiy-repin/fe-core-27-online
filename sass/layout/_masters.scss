@@ -1,0 +1,38 @@
+.masters {
+    background-color: #f7f7f7;
+  }
+  
+  .masters .title {
+    margin-bottom: 44px;
+  }
+  
+  .masters-list {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .masters-list-content {
+    padding-top: 30px;
+    padding-left: 82px;
+    padding-right: 82px;
+  }
+  
+  .masters-list-name {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.389;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: $title-light-theme-color;
+    margin-bottom: 8px;
+  }
+  
+  .masters-list-position {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.357;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: $accent-color;
+    margin-bottom: 30px;
+  }

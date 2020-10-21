@@ -1,0 +1,35 @@
+.subtitle {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.364;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+  
+  .subtitle::before {
+    display: inline-block;
+    content: "";
+    width: 60px;
+    height: 1px;
+    background-color: #303030;
+    margin-right: 20px;
+  }
+  
+  .subtitle-dark-theme {
+    color: $subtitle-dark-theme-color;
+  }
+  
+  .subtitle-dark-theme::before {
+    background-color: $subtitle-dark-theme-color;
+  }
+  
+  .subtitle-light-theme {
+    color: $subtitle-light-theme-color;
+  }
+  
+  .subtitle-light-theme::before {
+    background-color: $subtitle-light-theme-color;
+  }

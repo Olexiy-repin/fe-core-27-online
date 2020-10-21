@@ -1,0 +1,37 @@
+.hero-left-side .social-links {
+    transform: rotate(-90deg);
+    transform-origin: left top;
+  }
+  
+  .social-links {
+    display: flex;
+    align-items: center;
+  }
+  
+  .social-links::before {
+    display: inline-block;
+    content: "";
+    width: 60px;
+    height: 1px;
+    background-color: #303030;
+    flex-shrink: 0;
+    margin-right: 40px;
+  }
+  
+  .social-links-item:not(:last-child) {
+    margin-right: 40px;
+  }
+  
+  .social-link {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.364;
+    letter-spacing: 0.2em;
+    color: #303030;
+    transition: color 250ms linear;
+  }
+  
+  .social-link:hover,
+  .social-link:focus {
+    color: $accent-color;
+  }
