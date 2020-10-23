@@ -1,20 +1,13 @@
-.hero .container {
-    display: flex;
-  }
-  
-  .hero .description {
-    max-width: 400px;
-  }
-  
-  .hero-left-side {
+.hero {
+  &-left-side {
     display: flex;
     align-items: flex-end;
     width: 100px;
     padding-left: 26px;
     padding-bottom: 40px;
   }
-  
-  .hero-right-side {
+
+  &-right-side {
     flex-grow: 1;
     padding-left: 100px;
     padding-top: 272px;
@@ -26,8 +19,8 @@
       ),
       url("../images/hero/bg.jpg");
   }
-  
-  .hero-title {
+
+  &-title {
     font-family: $secondary-font;
     font-weight: 700;
     font-size: 72px;
@@ -36,4 +29,4 @@
     margin-bottom: 20px;
     color: #fff;
   }
-  
+}

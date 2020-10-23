@@ -1,28 +1,33 @@
 .modal-btn {
-    font-family: $main-font;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 12px;
-    line-height: 1.333;
-    letter-spacing: 0.09em;
-    text-transform: uppercase;
-    color: #ffffff;
-    padding: 12px;
-    min-width: 160px;
-    height: 40px;
-    border: 1px solid #ff6c00;
-    border-radius: 25px;
-    background-color: transparent;
-    cursor: pointer;
-    transition: all 250ms linear;
-  }
-  
-  .modal-btn_light-theme {
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.333;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding: 12px;
+  min-width: 160px;
+  height: 40px;
+  border: 1px solid #ff6c00;
+  border-radius: 25px;
+  background-color: transparent;
+  cursor: pointer;
+  transition: all 250ms linear;
+
+  &_light-theme {
     color: #303030;
   }
-  
-  .modal-btn:hover,
-  .modal-btn:focus {
+
+  &:hover,
+  &:focus {
     background-color: $accent-color;
     color: #fff;
   }
+
+  .services & {
+    display: block;
+    margin: 0 auto;
+  }
+}

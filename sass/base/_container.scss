@@ -1,5 +1,20 @@
 .container {
-    width: 1200px;
-    padding: 0 15px;
-    margin: 0 auto;
+  width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+
+  .header & {
+    display: flex;
+    align-items: center;
   }
+
+  .hero &,
+  .about &,
+  .achievements & {
+    display: flex;
+  }
+
+  .footer & {
+    @extend %flex-align;
+  }
+}

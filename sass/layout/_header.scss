@@ -1,57 +1,62 @@
 .header {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 32px 0;
-  }
-  
-  .header .container {
-    display: flex;
-    align-items: center;
-  }
-  
-  .header .address {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 32px 0;
+
+  .address {
     margin-left: auto;
     margin-right: 40px;
   }
-  
-  .header__logo {
+
+  &__logo {
     margin-right: 70px;
   }
-  
-  .navigation {
+}
+
+.logo {
+  animation-duration: 1000ms;
+  animation-iteration-count: 4;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+
+  &__list {
     display: flex;
-    align-items: center;
+
+    &-item:not(:last-child) {
+      margin-right: 40px;
+    }
+
+    &-link {
+      font-weight: 600;
+      font-size: 12px;
+      line-height: 1.333;
+      letter-spacing: 0.1em;
+      color: #fff;
+      transition: color 250ms linear;
+
+      &:hover,
+      &:focus {
+        color: $accent-color;
+      }
+    }
   }
-  
-  .navigation__list {
-    display: flex;
-  }
-  
-  .logo {
-    animation-duration: 1000ms;
-    animation-iteration-count: 4;
-  }
-  
-  .navigation__list-item:not(:last-child) {
-    margin-right: 40px;
-  }
-  
-  .navigation__list-link,
-  .tel-link {
-    font-weight: 600;
-    font-size: 12px;
-    line-height: 1.333;
-    letter-spacing: 0.1em;
-    color: #fff;
-    transition: color 250ms linear;
-  }
-  
-  .navigation__list-link:hover,
-  .navigation__list-link:focus,
-  .tel-link:hover,
-  .tel-link:focus {
+}
+
+.tel-link {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.333;
+  letter-spacing: 0.1em;
+  color: #fff;
+  transition: color 250ms linear;
+
+  &:hover,
+  &:focus {
     color: $accent-color;
   }
-  
+}

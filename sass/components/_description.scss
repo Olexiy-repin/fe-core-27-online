@@ -1,14 +1,22 @@
 .description {
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 1.667;
-    letter-spacing: 0.02em;
-  }
-  
-  .description-dark-theme {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.667;
+  letter-spacing: 0.02em;
+
+  &-dark-theme {
     color: $description-dark-theme-color;
   }
-  
-  .description-light-theme {
+
+  &-light-theme {
     color: $description-light-theme-color;
   }
+
+  .hero & {
+    max-width: 400px;
+  }
+
+  .about & {
+    margin-bottom: 20px;
+  }
+}

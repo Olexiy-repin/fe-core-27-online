@@ -1,19 +1,18 @@
 .contact-form-section {
-    display: flex;
-    justify-content: flex-end;
-    padding-right: 25px;
-  }
-  
-  .contact-form {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    justify-content: space-between;
-    width: 560px;
-  }
-  
-  .contact-form-input,
-  .contact-form-message {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 25px;
+}
+
+.contact-form {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 560px;
+
+  &-input,
+  &-message {
     font-weight: 600;
     font-size: 11px;
     line-height: 1.364;
@@ -22,51 +21,47 @@
     background-color: transparent;
     border: none;
     border-bottom: 1px solid #9da4bd;
+
+    &::placeholder {
+      text-transform: uppercase;
+    }
+
+    &:focus {
+      outline: none;
+      border-bottom: 1px solid #fff;
+
+      &::placeholder {
+        color: #fff;
+      }
+    }
   }
-  
-  .contact-form-input::placeholder,
-  .contact-form-message::placeholder {
-    text-transform: uppercase;
-  }
-  
-  .contact-form-input:focus,
-  .contact-form-message:focus {
-    outline: none;
-    border-bottom: 1px solid #fff;
-  }
-  
-  .contact-form-input:focus::placeholder,
-  .contact-form-message:focus::placeholder {
-    color: #fff;
-  }
-  
-  .contact-form-input:required:focus:invalid {
-    border-bottom: 1px solid tomato;
-  }
-  
-  .contact-form-input:required:focus:valid {
-    border-bottom: 1px solid teal;
-  }
-  
-  .contact-form-input:required:focus:invalid::placeholder {
-    color: tomato;
-  }
-  
-  .contact-form-input {
+
+  &-input {
     width: 270px;
     height: 24px;
     margin-bottom: 44px;
+
+    &:required:focus:invalid {
+      border-bottom: 1px solid tomato;
+    }
+
+    &:required:focus:valid {
+      border-bottom: 1px solid teal;
+    }
+
+    &:required:focus:invalid::placeholder {
+      color: tomato;
+    }
   }
-  
-  .contact-form-message {
+
+  &-message {
     width: 100%;
     height: 76px;
     resize: none;
     margin-bottom: 44px;
   }
-  
-  .contact-form-btn,
-  .modal-form-btn {
+
+  &-btn {
     font-family: $main-font;
     font-style: normal;
     font-weight: 600;
@@ -83,18 +78,11 @@
     background-color: transparent;
     cursor: pointer;
     transition: all 250ms linear;
+
+    &:hover,
+    &:focus {
+      background-color: $accent-color;
+      color: #fff;
+    }
   }
-  
-  .modal-form-btn {
-    align-self: flex-start;
-    color: #555555;
-  }
-  
-  .contact-form-btn:hover,
-  .contact-form-btn:focus,
-  .modal-form-btn:hover,
-  .modal-form-btn:focus {
-    background-color: $accent-color;
-    color: #fff;
-  }
-  
+}

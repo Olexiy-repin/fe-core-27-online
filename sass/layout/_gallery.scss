@@ -1,8 +1,6 @@
-.gallery .subtitle {
-    margin-bottom: 44px;
-  }
-  
-  .gallery-list {
+.gallery {
+  &-list {
     display: flex;
     justify-content: space-between;
   }
+}

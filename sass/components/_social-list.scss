@@ -1,9 +1,8 @@
 .social-list {
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  .social-list-link {
+  display: flex;
+  justify-content: space-between;
+
+  &-link {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -12,18 +11,21 @@
     border-radius: 50%;
     background-color: #fff;
     transition: background-color 250ms linear;
+
+    &:hover,
+    &:focus {
+      background-color: #000;
+    }
   }
-  
-  .social-list-link:hover {
-    background-color: #000;
-  }
-  
-  .social-list-link:hover .social-list-svg {
+}
+
+.social-list-svg {
+  width: 20px;
+  height: 20px;
+  transition: fill 250ms linear;
+
+  .social-list-link:hover &,
+  .social-list-link:focus & {
     fill: $accent-color;
   }
-  
-  .social-list-svg {
-    width: 20px;
-    height: 20px;
-    transition: fill 250ms linear;
-  }
+}
