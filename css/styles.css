@@ -1,0 +1,159 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+/* body {
+  background-color: tomato;
+} */
+
+/* ========== MIN-WIDTH MAX-WIDTH ========== */
+/* Когда ширина вьюпорта будет 500px или больше, применить правила внутри */
+/* @media (min-width: 500px) {
+  body {
+    background-color: teal;
+  }
+} */
+
+/* Когда ширина вьюпорта будет 768px или больше, применить правила внутри */
+/* @media (min-width: 768px) {
+  body {
+    background-color: slateblue;
+  }
+} */
+
+/* Когда ширина вьюпорта будет от 320px и до 768px, применить правила внутри */
+/* @media (max-width: 768px) {
+  body {
+    background-color: springgreen;
+  }
+} */
+
+/* Когда ширина вьюпорта будет от 320px и до 500px, применить правила внутри */
+/* @media (max-width: 500px) {
+  body {
+    background-color: lightcoral;
+  }
+} */
+
+/* ========== AND ========== */
+/* Применить правила когда вьюпорт от 768px и до 1199px */
+/* @media (min-width: 768px) and (max-width: 1199px) {
+  body {
+    background-color: lightsalmon;
+  }
+} */
+/* ========== OR ========== */
+/* @media (max-width: 767px), (min-width: 1200px) {
+  body {
+    background-color: lightseagreen;
+  }
+} */
+/* ========== TYPES ========== */
+/* 
+  all
+  screen 
+  print
+*/
+/* @media print {
+  .navigation-list {
+    display: none;
+  }
+
+  .modal-btn {
+    display: none;
+  }
+} */
+/* ========== ORIENTATION ========== */
+/* @media (orientation: landscape) and (max-width: 767px) {
+  body {
+    background-color: maroon;
+  }
+}
+
+@media (orientation: portrait) {
+  body {
+    background-color: wheat;
+  }
+} */
+
+body {
+  padding: 50px 0;
+}
+
+.container {
+  width: 100%;
+  padding: 0 15px;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-shadow: 0px 5px 10px 0 #ccc;
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  /* 1,2,3 */
+  .card:not(:last-child) {
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .card:not(:nth-last-child(-n + 2)) {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .card {
+    width: 300px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+
+  .card {
+    width: 260px;
+  }
+}
