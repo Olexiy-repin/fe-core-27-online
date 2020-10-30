@@ -1,20 +1,42 @@
 .container {
-  width: 1200px;
-  padding: 0 15px;
-  margin: 0 auto;
-
-  .header & {
-    display: flex;
-    align-items: center;
-  }
-
-  .hero &,
-  .about &,
-  .achievements & {
-    display: flex;
-  }
+  padding: 0 31px;
 
   .footer & {
     @extend %flex-align;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+    padding: 0 39px;
+
+    .hero &,
+    .about & {
+      display: flex;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+    padding: 0 15px;
+
+    .header & {
+      display: flex;
+      align-items: center;
+    }
+
+    .achievements & {
+      display: flex;
+    }
   }
 }

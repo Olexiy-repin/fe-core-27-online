@@ -15,7 +15,7 @@
 
 <body>
     <!-- HEADER -->
-    <header class="header">
+    <!-- <header class="header">
         <div class="container">
             <nav class="navigation">
                 <a class="logo header__logo animate__pulse" href="./index.html" aria-label="логотип барбершопа">
@@ -43,7 +43,7 @@
             </address>
             <button class="modal-btn" type="button" data-modal-open>онлайн-запись</button>
         </div>
-    </header>
+    </header> -->
     <main>
         <!-- HERO -->
         <section class="hero">
@@ -73,18 +73,37 @@
                 <div class="about-left-side">
                     <ul class="about-list list">
                         <li class="about-list-item">
-                            <img class="about-list-img" src="./images/about-us/about-img-1.jpg"
-                                alt="мастер намыливает бороду клиенту" width="240" height="475">
+                            <picture>
+                                <source
+                                    srcset="./images/about-us/about-img-desktop-1.webp 1x, ./images/about-us/about-img-desktop-1@2x.webp 2x"
+                                    media="(min-width: 1200px)" type="image/webp">
+                                <source
+                                    srcset="./images/about-us/about-img-desktop-1.jpg 1x, ./images/about-us/about-img-desktop-1@2x.jpg 2x"
+                                    media="(min-width: 1200px)">
+                                <source
+                                    srcset="./images/about-us/about-img-tablet-1.jpg 1x, ./images/about-us/about-img-tablet-1@2x.jpg 2x"
+                                    media="(min-width:768px)">
+                                <img class="about-list-img" src="./images/about-us/about-img-tablet-1.jpg"
+                                    alt="мастер намыливает бороду клиенту">
+                            </picture>
                         </li>
                         <li class="about-list-item">
-                            <img class="about-list-img" src="./images/about-us/about-img-2.jpg"
-                                alt="мастер стрижет клиента" width="240" height="475">
+                            <picture>
+                                <source
+                                    srcset="./images/about-us/about-img-desktop-2.jpg 1x, ./images/about-us/about-img-desktop-2@2x.jpg 2x"
+                                    media="(min-width:1200px)">
+                                <source
+                                    srcset="./images/about-us/about-img-tablet-2.jpg 1x, ./images/about-us/about-img-tablet-2@2x.jpg 2x"
+                                    media="(min-width:768px)">
+                                <img class="about-list-img" src="./images/about-us/about-img-tablet-2.jpg"
+                                    alt="мастер намыливает бороду клиенту">
+                            </picture>
                         </li>
                     </ul>
                 </div>
                 <div class="about-right-side">
                     <p class="subtitle subtitle-light-theme">О НАС</p>
-                    <h2 class="title title-light-theme">Лучший Барбершоп
+                    <h2 class="title title-light-theme">Лучший Барбершоп <br>
                         твоего города</h2>
                     <p class="description description-light-theme">Если ты хочешь добавить в свой образ больше
                         уверенности –
@@ -99,7 +118,7 @@
         </section>
 
         <!-- SERVICES -->
-        <section class="services section">
+        <!-- <section class="services section">
             <div class="container">
                 <p class="subtitle subtitle-dark-theme">Проведи время в компании лучших мастеров</p>
                 <h2 class="title title-dark-theme">Услуги и цены</h2>
@@ -150,10 +169,10 @@
                 </div>
                 <button class="modal-btn" type="button">онлайн-запись</button>
             </div>
-        </section>
+        </section> -->
 
         <!-- achievements -->
-        <section class="achievements section">
+        <!-- <section class="achievements section">
             <div class="container">
                 <div class="achievements-left-side">
                     <ul class="achievements-list list">
@@ -183,10 +202,10 @@
                         прочувствовать, чем 10 раз прочитать. </p>
                 </div>
             </div>
-        </section>
+        </section> -->
 
         <!-- MASTERS -->
-        <section class="masters section">
+        <!-- <section class="masters section">
             <div class="container">
                 <p class="subtitle subtitle-light-theme">для настоящих ценителей атмосферы</p>
                 <h2 class="title title-light-theme">Наши мастера</h2>
@@ -309,10 +328,10 @@
                     </li>
                 </ul>
             </div>
-        </section>
+        </section> -->
 
         <!-- GALLERY -->
-        <section class="gallery section">
+        <!-- <section class="gallery section">
             <div class="container">
                 <p class="subtitle subtitle-light-theme">На латинском языке “барба” означает “борода”</p>
                 <h2 class="visually-hidden">Галерея работ</h2>
@@ -335,12 +354,12 @@
                     </li>
                 </ul>
             </div>
-        </section>
+        </section> -->
 
         <!-- CONTACT -->
-        <div class="contact-wrapper">
-            <!-- CONTACT FORM -->
-            <section class="contact-form-section">
+        <!-- <div class="contact-wrapper"> -->
+        <!-- CONTACT FORM -->
+        <!-- <section class="contact-form-section">
                 <div class="contact-form-wrapper">
                     <h2 class="title title-dark-theme">Онлайн-запись</h2>
                     <form action="#" class="contact-form">
@@ -352,10 +371,10 @@
                         <button type="submit" class="contact-form-btn">отправить</button>
                     </form>
                 </div>
-            </section>
+            </section> -->
 
-            <!-- CONTACT INFORMATION -->
-            <section class="contact-information">
+        <!-- CONTACT INFORMATION -->
+        <!-- <section class="contact-information">
                 <h2 class="title title-dark-theme">Контакты</h2>
                 <address class="address">
                     <ul class="contact-list list">
@@ -384,10 +403,10 @@
                 </address>
                 <p class="subtitle subtitle-dark-theme">время работы</p>
                 <p class="contact-date">Ежедневно с 9:00 до 22:00</p>
-            </section>
-        </div>
+            </section> -->
+        <!-- </div> -->
     </main>
-    <footer class="footer">
+    <!-- <footer class="footer">
         <div class="container">
             <p class="copyright">&copy; Copyright 2020 </p>
             <ul class="social-links list">
@@ -399,9 +418,9 @@
                 </li>
             </ul>
         </div>
-    </footer>
+    </footer> -->
 
-    <div class="backdrop is-hidden" data-modal>
+    <!-- <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <button type="button" class="close-btn" data-modal-close>X</button>
             <form action="#" class="modal-form">
@@ -430,7 +449,7 @@
                 <button type="submit" class="modal-form-btn">отправить</button>
             </form>
         </div>
-    </div>
+    </div> -->
 
     <script src="./js/modal.js"></script>
 </body>

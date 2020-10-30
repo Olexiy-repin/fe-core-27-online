@@ -1,6 +1,6 @@
 .title {
   font-family: $secondary-font;
-  @include font(700, 42px, 49px);
+  @include font(700, 28px, 33px);
   letter-spacing: 0.05em;
 
   &-dark-theme {
@@ -20,5 +20,11 @@
   .masters &,
   .contact-wrapper & {
     margin-bottom: 44px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .title {
+    @include font(700, 42px, 49px);
   }
 }

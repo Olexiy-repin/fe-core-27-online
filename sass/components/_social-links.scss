@@ -12,19 +12,11 @@
     margin-right: 40px;
   }
 
-  .hero-left-side & {
-    transform: rotate(-90deg);
-    transform-origin: left top;
-  }
-
   &-item {
     &:not(:last-child) {
       margin-right: 40px;
     }
   }
-}
-
-.social-links-item:not(:last-child) {
 }
 
 .social-link {
@@ -38,5 +30,14 @@
   &:hover,
   &:focus {
     color: $accent-color;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .social-links {
+    .hero-left-side & {
+      transform: rotate(-90deg);
+      transform-origin: left top;
+    }
   }
 }
